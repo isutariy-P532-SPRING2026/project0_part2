@@ -23,7 +23,7 @@
 
         async function search() {
             if(ducks.length == 0) {
-                ducks = await getAll();
+                await getAll();
             }
 
             let duckType = document.getElementById("type").value;
